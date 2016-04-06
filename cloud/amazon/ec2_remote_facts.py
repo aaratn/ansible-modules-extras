@@ -115,6 +115,7 @@ def get_instance_info(instance):
                     'private_ip_address': instance.private_ip_address,
                     'state': instance._state.name,
                     'vpc_id': instance.vpc_id,
+                    'instance_type': instance.instance_type,
                   }
 
     return instance_info

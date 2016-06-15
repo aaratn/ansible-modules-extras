@@ -131,6 +131,8 @@ def get_instance_info(instance):
                     'state': instance._state.name,
                     'vpc_id': instance.vpc_id,
                     'block_device_mapping': bdm_dict,
+                    'instance_type': instance.instance_type,
+                    'platform': instance.platform,
                   }
 
     return instance_info
